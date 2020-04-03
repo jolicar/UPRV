@@ -4,6 +4,7 @@ Pasos para utilizar Github
 2.-Reiniciar pc
 3.-Navegar por consola a la carpeta donde tienes los archivos
 4.- >>git init (SOLO PARA CREAR UN NUEVO PROYECTO)
+4B.- >>git clone https://github.com/jolicar/UPRV.git (CLONAR ARCHIVOS A LOCAL)
 5.- >>git add . (PROPONES TODOS LOS ARCHIVOS DE LA CARPETA A SER SUBIDOS A GITHUB)
 6.- >>git config --global user.email "you@example.com" (IDENTIFICACION)
 7.- >>git config --global user.name "Your Name" (IDENTIFICACION)
@@ -13,4 +14,4 @@ Pasos para utilizar Github
 11.- >>git pull (BAJA LOS ARCHIVOS DEL GITHUB A LOCAL)
 
 NOTA:
-Lo recomendable si se busca trabajar o modificar archivos ya presentes en hithub, es hacer primero un pull y sobre estos archivos, realzar las modificaciones. De esta manera evitamos conflictos.
+Lo recomendable si se busca trabajar o modificar archivos ya presentes en github, es hacer primero un pull y sobre estos archivos, realzar las modificaciones. De esta manera evitamos conflictos.
