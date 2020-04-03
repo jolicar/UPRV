@@ -1,0 +1,16 @@
+Pasos para utilizar Github
+---------------------------
+1.-Descargar git https://git-scm.com/
+2.-Reiniciar pc
+3.-Navegar por consola a la carpeta donde tienes los archivos
+4.- >>git init (SOLO PARA CREAR UN NUEVO PROYECTO)
+5.- >>git add . (PROPONES TODOS LOS ARCHIVOS DE LA CARPETA A SER SUBIDOS A GITHUB)
+6.- >>git config --global user.email "you@example.com" (IDENTIFICACION)
+7.- >>git config --global user.name "Your Name" (IDENTIFICACION)
+8.- >>git commit -m "coment commit" (DESCRIPCION, VERSION DE LOS ARCHIVOS...)
+9.- >>git remote add origin https://github.com/jolicar/UPRV.git (SOLO SE HACE AL CREAR EL PROYECTO, SIRVE PARA SINCRONOZAR EL LOCAL CON GITHUB)
+10.- >>git push -u origin master (SUBIR LAS DIFERENCIAS DE ARCHIVOS LOCALES CON RESPECTO A GITHUB)
+11.- >>git pull (BAJA LOS ARCHIVOS DEL GITHUB A LOCAL)
+
+NOTA:
+Lo recomendable si se busca trabajar o modificar archivos ya presentes en hithub, es hacer primero un pull y sobre estos archivos, realzar las modificaciones. De esta manera evitamos conflictos.
