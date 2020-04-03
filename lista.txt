@@ -1,0 +1,15 @@
+
+drwxrwxr-x 7 amm amm 4096 abr  3 20:41 ./
+drwxrwxr-x 3 amm amm 4096 abr  3 20:40 ../
+-rw-rw-r-- 1 amm amm 1368 abr  3 20:40 autoForm.html
+drwxrwxr-x 2 amm amm 4096 abr  3 20:40 css/
+drwxrwxr-x 2 amm amm 4096 abr  3 20:40 docs/
+drwxrwxr-x 8 amm amm 4096 abr  3 20:40 .git/
+-rw-rw-r-- 1 amm amm 1099 abr  3 20:40 git.txt
+drwxrwxr-x 2 amm amm 4096 abr  3 20:40 img/
+-rw-rw-r-- 1 amm amm 1181 abr  3 20:40 index.html
+-rw-rw-r-- 1 amm amm 1155 abr  3 20:40 index.html~
+-rw-rw-r-- 1 amm amm 1401 abr  3 20:40 indexJOC.html
+drwxrwxr-x 2 amm amm 4096 abr  3 20:40 js/
+-rw-rw-r-- 1 amm amm    0 abr  3 20:41 lista.txt
+-rw-rw-r-- 1 amm amm 1007 abr  3 20:40 startForm.html
