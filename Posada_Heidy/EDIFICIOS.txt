@@ -1,0 +1,105 @@
+7I	ETSI Geodésica, Cartográfica y Topográfica (ETSIGCT)	39.4811525	-0.3370268	Vera
+1E	ETS de Ingeniería Informática			
+1E	Museo de Informática			
+1H	ETS de Ingeniería Informática			
+1H	Colegio Oficial de Bibliotecarios y Documentalistas de la Comunidad Valenciana			
+1G	ETS de Ingeniería Informática			
+1G	Dpto. de Informática de Sistemas y Computadores			
+1F	Dpto. de Sistemas Informáticos y Computación			
+1F	Centro de Investigación en Métodos de Producción de Software			
+1F	Instituto Valenciano de Investigación en Inteligencia Artificial			
+1C	ETS de Ingeniería de Edificación			
+1B	ETS de Ingeniería de Edificación			
+1B	Centro Infantil Vera			
+1B	Cafetería La Vella			
+3N	Facultad de Bellas Artes			
+3N	Dpto. de Comunicación Audiovisual, Documentación e Historia del Arte			
+3N	Dpto. de Conservación y Restauración de Bienes Culturales			
+3N	Dpto. de Dibujo			
+3N	Dpto. de Escultura			
+3N	Dpto. de Pintura			
+3N	Cafetería BBAA			
+3N	Tienda de productos de bellas artes			
+3M	Facultad de Bellas Artes			
+3M	Laboratorio de Luz			
+3P	ETS de Ing. Agron. Y del Medio Natural			
+3P	Dpto. de Ingeniería Rural y Agroalimentaria			
+3P	Dpto. de Producción Vegetal			
+3K	Asociación Española de Valoración Agraria			
+3J 	Dpto. de Biotecnología 			
+3J 	Dpto. de Ecosistemas Agroforestales			
+3I 				
+3H	ETS de Ing. Agron. Y del Medio Natural			
+3H	Área de Comunicación			
+3H	Taller de bicicletas			
+3H	Centralita			
+3G				
+3D	Papelería			
+3D	Tarongeria			
+3C	Dpto. de Ingeniería Rural y Agroalimentaria			
+3C	Área de Intercambio Académico			
+3C	Oficina de Programas Internacionales de Intercambio			
+3C	Servicio de Promoción y Normalización Lingüística			
+3B	Dpto. de Ingeniería Gráfica			
+3B	Dpto. de Ingeniería Rural y Agroalimentaria			
+3B	Centro Valenciano de Estudios sobre el Riego			
+3F	Dpto. de Ingeniería Rural y Agroalimentaria			
+3F	Dpto. de Tecnología de Alimentos			
+3F	Defensor Universitario			
+3F	Oficina de Correos			
+3F	Registro General			
+3G	Alumni UPV			
+3Q	Servicio de Promoción y Normalización Lingüística			
+3Q	Unidad de Formación para la Administración y los Servicios Universitarios			
+3Q	Unidad de Igualdad			
+3A	Consejo Social			
+3A	Gabinete del Rector			
+3A	Gerencia			
+3A	Rector			
+3A	Secretaría General			
+3A	Vicerrectorado de  Alumnado, Cultura y Deporte			
+3A	Vicerrectorado de Estudios, Calidad y Acreditación			
+3A	Vicerrectorado de Investigación, Innovación y Transferencia			
+3A	Vicerrectorado de los Campus y Sostenibilidad			
+3A	Vicerrectorado de Ordenación Académica y Profesorado			
+3A	Vicerrectorado de Planificación y Prospectiva			
+3A	Vicerrectorado de Recursos Digitales y Documentación			
+3A	Vicerrectorado de Responsabilidad Social y Cooperación 			
+3A	Área de Actividades Culturales			
+3A	Área de Alumnado, Rendimiento y Evaluación Curricular			
+3A	Área de Análisis para la eficiencia de los Recursos			
+3A	Área de Calidad y Acreditación			
+3A	Área de Estudios y Ordenación de Títulos			
+3A	Área de Fondo de Arte y Patrimonio UPV			
+3A	Área de Inspección de Servicios			
+3A	Área de Ordenación Académica			
+3A	Área de Ordenación de los Campus			
+2E	Escuela de Doctorado			
+2E	Área de Control Interno			
+2E	Área de Gestión de Alumnado			
+2E	Área de Contratación			
+2E	Servicio de Contratación			
+2E	Servicio de Financiación y Presupuestos			
+2E	Servicio de Fiscalización			
+2E	Servicio de Gestión Económica			
+2E	Servicio de Infraestructura			
+2E	Servicio de Mantenimiento			
+2E	Servicio de Normativa e Inspección 			
+2E	Servicio de Procesos Electrónicos y Transparencia			
+2E	Servicio de Recursos Humanos			
+2E	Servicio de Tesorería y Gestión Tributaria			
+2E	Servicio Jurídico			
+2E	Unidad de Formación para la Administración y los Servicios Universitarios			
+2F	ETS de Arquitectura			
+2F	Dpto. de Expresión Gráfica Arquitectónica 			
+2F	Dpto. de Proyectos Arquitectónicos			
+2F	Editorial UPV			
+2F	Reprografía en Valencia			
+2B				
+2G	Bankia			
+2G	EMT Valencia 			
+2D	Cafetería Ágora			
+2C				
+2A	Dpto. de Composición Arquitectónica			
+2A	Dpto. de Construcciones Arquitectónicas			
+2A	Dpto. de Urbanismo			
