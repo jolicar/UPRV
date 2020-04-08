@@ -1,4 +1,4 @@
-7I	ETSI Geodésica, Cartográfica y Topográfica (ETSIGCT)	39.4811525	-0.3370268	Vera
+7I	ETSI Geodésica, Cartográfica y Topográfica (ETSIGCT)	394.811.525	-0.3370268	Vera
 1E	ETS de Ingeniería Informática			
 1E	Museo de Informática			
 1H	ETS de Ingeniería Informática			
@@ -103,3 +103,39 @@
 2A	Dpto. de Composición Arquitectónica			
 2A	Dpto. de Construcciones Arquitectónicas			
 2A	Dpto. de Urbanismo			
+5J	Dpto. de Proyectos de Ingeniería			
+5J	Dpto. de Termodinámica Aplicada			
+5H	Dpto. de Mecánica de los Medios Continuos y Teoría de Estructuras			
+5H	Instituto Universitario de Seguridad Industrial, Radiofísica y Medioambiental			
+5F	Escuela Técnica Superior de Ingeniería Industrial 			
+5F	Servicio de Promoción y Normalización Lingüística			
+5B	Cafetería Pizzeria			
+5B	Farmacia Politecnico			
+5B	Óptica Politécnica			
+5C	Dpto. de Ingeniería de Sistemas y Automática			
+5C	Centro de Medio Ambiente Industrial			
+5C	FLUING  - IMM			
+5C	Instituto Tecnológico del Agua			
+5D	Laboratorio de Acústica Industrial			
+5G				
+5I	Dpto. de Ingeniería Quimica y Nuclear			
+5I	Laboratorio de Radiactividad Ambiental			
+5I	Servicio de Radiaciones			
+5K	Dpto. de Ingeniería Química y Nuclear			
+5K	Instituto Universitario de Seguridad Industrial, Radiofísica y Medioambiental			
+5L				
+5M	Dpto. de Química			
+5M	Instituto Interuniversitario de Investigación de Reconocimiento Molecular y Desarrollo Tecnológico			
+5M	UMI UPV-CIPF en Mecanismos de enfermedades y nanomedicina			
+5M	Unidad Mixta en Nanomedicina y Sensores entre la Fundación Hospital La Fe y el Instituo de Reconocimiento			
+5N	ETS de Ingeniería Industrial			
+5O	Seguridad			
+5O	Servicio de Mantenimiento			
+5P	Invernaderos			
+5Q				
+5R	Servicio de Deportes			
+5E	Dpto. de Ingeniería Eléctrica			
+5E	Dpto. de Ingeniería Mecánica y de Materiales			
+5E	Centro de Investigación en Ingeniería Mecánica			
+5E	Instituto de Tecnología de Materiales			
+5E	Laboratorio de Metrología Dimensional			
