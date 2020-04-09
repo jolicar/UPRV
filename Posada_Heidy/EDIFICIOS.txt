@@ -1,141 +1,225 @@
 7I	ETSI Geodésica, Cartográfica y Topográfica (ETSIGCT)	394.811.525	-0.3370268	Vera
-1E	ETS de Ingeniería Informática			
-1E	Museo de Informática			
-1H	ETS de Ingeniería Informática			
-1H	Colegio Oficial de Bibliotecarios y Documentalistas de la Comunidad Valenciana			
-1G	ETS de Ingeniería Informática			
-1G	Dpto. de Informática de Sistemas y Computadores			
-1F	Dpto. de Sistemas Informáticos y Computación			
-1F	Centro de Investigación en Métodos de Producción de Software			
-1F	Instituto Valenciano de Investigación en Inteligencia Artificial			
-1C	ETS de Ingeniería de Edificación			
-1B	ETS de Ingeniería de Edificación			
-1B	Centro Infantil Vera			
-1B	Cafetería La Vella			
-3N	Facultad de Bellas Artes			
-3N	Dpto. de Comunicación Audiovisual, Documentación e Historia del Arte			
-3N	Dpto. de Conservación y Restauración de Bienes Culturales			
-3N	Dpto. de Dibujo			
-3N	Dpto. de Escultura			
-3N	Dpto. de Pintura			
-3N	Cafetería BBAA			
-3N	Tienda de productos de bellas artes			
-3M	Facultad de Bellas Artes			
-3M	Laboratorio de Luz			
-3P	ETS de Ing. Agron. Y del Medio Natural			
-3P	Dpto. de Ingeniería Rural y Agroalimentaria			
-3P	Dpto. de Producción Vegetal			
-3K	Asociación Española de Valoración Agraria			
-3J 	Dpto. de Biotecnología 			
-3J 	Dpto. de Ecosistemas Agroforestales			
-3I 				
-3H	ETS de Ing. Agron. Y del Medio Natural			
-3H	Área de Comunicación			
-3H	Taller de bicicletas			
-3H	Centralita			
-3G				
-3D	Papelería			
-3D	Tarongeria			
-3C	Dpto. de Ingeniería Rural y Agroalimentaria			
-3C	Área de Intercambio Académico			
-3C	Oficina de Programas Internacionales de Intercambio			
-3C	Servicio de Promoción y Normalización Lingüística			
-3B	Dpto. de Ingeniería Gráfica			
-3B	Dpto. de Ingeniería Rural y Agroalimentaria			
-3B	Centro Valenciano de Estudios sobre el Riego			
-3F	Dpto. de Ingeniería Rural y Agroalimentaria			
-3F	Dpto. de Tecnología de Alimentos			
-3F	Defensor Universitario			
-3F	Oficina de Correos			
-3F	Registro General			
-3G	Alumni UPV			
-3Q	Servicio de Promoción y Normalización Lingüística			
-3Q	Unidad de Formación para la Administración y los Servicios Universitarios			
-3Q	Unidad de Igualdad			
-3A	Consejo Social			
-3A	Gabinete del Rector			
-3A	Gerencia			
-3A	Rector			
-3A	Secretaría General			
-3A	Vicerrectorado de  Alumnado, Cultura y Deporte			
-3A	Vicerrectorado de Estudios, Calidad y Acreditación			
-3A	Vicerrectorado de Investigación, Innovación y Transferencia			
-3A	Vicerrectorado de los Campus y Sostenibilidad			
-3A	Vicerrectorado de Ordenación Académica y Profesorado			
-3A	Vicerrectorado de Planificación y Prospectiva			
-3A	Vicerrectorado de Recursos Digitales y Documentación			
-3A	Vicerrectorado de Responsabilidad Social y Cooperación 			
-3A	Área de Actividades Culturales			
-3A	Área de Alumnado, Rendimiento y Evaluación Curricular			
-3A	Área de Análisis para la eficiencia de los Recursos			
-3A	Área de Calidad y Acreditación			
-3A	Área de Estudios y Ordenación de Títulos			
-3A	Área de Fondo de Arte y Patrimonio UPV			
-3A	Área de Inspección de Servicios			
-3A	Área de Ordenación Académica			
-3A	Área de Ordenación de los Campus			
-2E	Escuela de Doctorado			
-2E	Área de Control Interno			
-2E	Área de Gestión de Alumnado			
-2E	Área de Contratación			
-2E	Servicio de Contratación			
-2E	Servicio de Financiación y Presupuestos			
-2E	Servicio de Fiscalización			
-2E	Servicio de Gestión Económica			
-2E	Servicio de Infraestructura			
-2E	Servicio de Mantenimiento			
-2E	Servicio de Normativa e Inspección 			
-2E	Servicio de Procesos Electrónicos y Transparencia			
-2E	Servicio de Recursos Humanos			
-2E	Servicio de Tesorería y Gestión Tributaria			
-2E	Servicio Jurídico			
-2E	Unidad de Formación para la Administración y los Servicios Universitarios			
-2F	ETS de Arquitectura			
-2F	Dpto. de Expresión Gráfica Arquitectónica 			
-2F	Dpto. de Proyectos Arquitectónicos			
-2F	Editorial UPV			
-2F	Reprografía en Valencia			
-2B				
-2G	Bankia			
-2G	EMT Valencia 			
-2D	Cafetería Ágora			
-2C				
-2A	Dpto. de Composición Arquitectónica			
-2A	Dpto. de Construcciones Arquitectónicas			
-2A	Dpto. de Urbanismo			
-5J	Dpto. de Proyectos de Ingeniería			
-5J	Dpto. de Termodinámica Aplicada			
-5H	Dpto. de Mecánica de los Medios Continuos y Teoría de Estructuras			
-5H	Instituto Universitario de Seguridad Industrial, Radiofísica y Medioambiental			
-5F	Escuela Técnica Superior de Ingeniería Industrial 			
-5F	Servicio de Promoción y Normalización Lingüística			
-5B	Cafetería Pizzeria			
-5B	Farmacia Politecnico			
-5B	Óptica Politécnica			
-5C	Dpto. de Ingeniería de Sistemas y Automática			
-5C	Centro de Medio Ambiente Industrial			
-5C	FLUING  - IMM			
-5C	Instituto Tecnológico del Agua			
-5D	Laboratorio de Acústica Industrial			
-5G				
-5I	Dpto. de Ingeniería Quimica y Nuclear			
-5I	Laboratorio de Radiactividad Ambiental			
-5I	Servicio de Radiaciones			
-5K	Dpto. de Ingeniería Química y Nuclear			
-5K	Instituto Universitario de Seguridad Industrial, Radiofísica y Medioambiental			
-5L				
-5M	Dpto. de Química			
-5M	Instituto Interuniversitario de Investigación de Reconocimiento Molecular y Desarrollo Tecnológico			
-5M	UMI UPV-CIPF en Mecanismos de enfermedades y nanomedicina			
-5M	Unidad Mixta en Nanomedicina y Sensores entre la Fundación Hospital La Fe y el Instituo de Reconocimiento			
-5N	ETS de Ingeniería Industrial			
-5O	Seguridad			
-5O	Servicio de Mantenimiento			
-5P	Invernaderos			
-5Q				
-5R	Servicio de Deportes			
-5E	Dpto. de Ingeniería Eléctrica			
-5E	Dpto. de Ingeniería Mecánica y de Materiales			
-5E	Centro de Investigación en Ingeniería Mecánica			
-5E	Instituto de Tecnología de Materiales			
-5E	Laboratorio de Metrología Dimensional			
+1E	ETS de Ingeniería Informática			Vera
+1E	Museo de Informática			Vera
+1H	ETS de Ingeniería Informática			Vera
+1H	Colegio Oficial de Bibliotecarios y Documentalistas de la Comunidad Valenciana			Vera
+1G	ETS de Ingeniería Informática			Vera
+1G	Dpto. de Informática de Sistemas y Computadores			Vera
+1F	Dpto. de Sistemas Informáticos y Computación			Vera
+1F	Centro de Investigación en Métodos de Producción de Software			Vera
+1F	Instituto Valenciano de Investigación en Inteligencia Artificial			Vera
+1C	ETS de Ingeniería de Edificación			Vera
+1B	ETS de Ingeniería de Edificación			Vera
+1B	Centro Infantil Vera			Vera
+1B	Cafetería La Vella			Vera
+3N	Facultad de Bellas Artes			Vera
+3N	Dpto. de Comunicación Audiovisual, Documentación e Historia del Arte			Vera
+3N	Dpto. de Conservación y Restauración de Bienes Culturales			Vera
+3N	Dpto. de Dibujo			Vera
+3N	Dpto. de Escultura			Vera
+3N	Dpto. de Pintura			Vera
+3N	Cafetería BBAA			Vera
+3N	Tienda de productos de bellas artes			Vera
+3M	Facultad de Bellas Artes			Vera
+3M	Laboratorio de Luz			Vera
+3P	ETS de Ing. Agron. Y del Medio Natural			Vera
+3P	Dpto. de Ingeniería Rural y Agroalimentaria			Vera
+3P	Dpto. de Producción Vegetal			Vera
+3K	Asociación Española de Valoración Agraria			Vera
+3J 	Dpto. de Biotecnología 			Vera
+3J 	Dpto. de Ecosistemas Agroforestales			Vera
+3I 				Vera
+3H	ETS de Ing. Agron. Y del Medio Natural			Vera
+3H	Área de Comunicación			Vera
+3H	Taller de bicicletas			Vera
+3H	Centralita			Vera
+3G				Vera
+3D	Papelería			Vera
+3D	Tarongeria			Vera
+3C	Dpto. de Ingeniería Rural y Agroalimentaria			Vera
+3C	Área de Intercambio Académico			Vera
+3C	Oficina de Programas Internacionales de Intercambio			Vera
+3C	Servicio de Promoción y Normalización Lingüística			Vera
+3B	Dpto. de Ingeniería Gráfica			Vera
+3B	Dpto. de Ingeniería Rural y Agroalimentaria			Vera
+3B	Centro Valenciano de Estudios sobre el Riego			Vera
+3F	Dpto. de Ingeniería Rural y Agroalimentaria			Vera
+3F	Dpto. de Tecnología de Alimentos			Vera
+3F	Defensor Universitario			Vera
+3F	Oficina de Correos			Vera
+3F	Registro General			Vera
+3G	Alumni UPV			Vera
+3Q	Servicio de Promoción y Normalización Lingüística			Vera
+3Q	Unidad de Formación para la Administración y los Servicios Universitarios			Vera
+3Q	Unidad de Igualdad			Vera
+3A	Consejo Social			Vera
+3A	Gabinete del Rector			Vera
+3A	Gerencia			Vera
+3A	Rector			Vera
+3A	Secretaría General			Vera
+3A	Vicerrectorado de  Alumnado, Cultura y Deporte			Vera
+3A	Vicerrectorado de Estudios, Calidad y Acreditación			Vera
+3A	Vicerrectorado de Investigación, Innovación y Transferencia			Vera
+3A	Vicerrectorado de los Campus y Sostenibilidad			Vera
+3A	Vicerrectorado de Ordenación Académica y Profesorado			Vera
+3A	Vicerrectorado de Planificación y Prospectiva			Vera
+3A	Vicerrectorado de Recursos Digitales y Documentación			Vera
+3A	Vicerrectorado de Responsabilidad Social y Cooperación 			Vera
+3A	Área de Actividades Culturales			Vera
+3A	Área de Alumnado, Rendimiento y Evaluación Curricular			Vera
+3A	Área de Análisis para la eficiencia de los Recursos			Vera
+3A	Área de Calidad y Acreditación			Vera
+3A	Área de Estudios y Ordenación de Títulos			Vera
+3A	Área de Fondo de Arte y Patrimonio UPV			Vera
+3A	Área de Inspección de Servicios			Vera
+3A	Área de Ordenación Académica			Vera
+3A	Área de Ordenación de los Campus			Vera
+2E	Escuela de Doctorado			Vera
+2E	Área de Control Interno			Vera
+2E	Área de Gestión de Alumnado			Vera
+2E	Área de Contratación			Vera
+2E	Servicio de Contratación			Vera
+2E	Servicio de Financiación y Presupuestos			Vera
+2E	Servicio de Fiscalización			Vera
+2E	Servicio de Gestión Económica			Vera
+2E	Servicio de Infraestructura			Vera
+2E	Servicio de Mantenimiento			Vera
+2E	Servicio de Normativa e Inspección 			Vera
+2E	Servicio de Procesos Electrónicos y Transparencia			Vera
+2E	Servicio de Recursos Humanos			Vera
+2E	Servicio de Tesorería y Gestión Tributaria			Vera
+2E	Servicio Jurídico			Vera
+2E	Unidad de Formación para la Administración y los Servicios Universitarios			Vera
+2F	ETS de Arquitectura			Vera
+2F	Dpto. de Expresión Gráfica Arquitectónica 			Vera
+2F	Dpto. de Proyectos Arquitectónicos			Vera
+2F	Editorial UPV			Vera
+2F	Reprografía en Valencia			Vera
+2B				Vera
+2G	Bankia			Vera
+2G	EMT Valencia 			Vera
+2D	Cafetería Ágora			Vera
+2C				Vera
+2A	Dpto. de Composición Arquitectónica			Vera
+2A	Dpto. de Construcciones Arquitectónicas			Vera
+2A	Dpto. de Urbanismo			Vera
+5J	Dpto. de Proyectos de Ingeniería			Vera
+5J	Dpto. de Termodinámica Aplicada			Vera
+5H	Dpto. de Mecánica de los Medios Continuos y Teoría de Estructuras			Vera
+5H	Instituto Universitario de Seguridad Industrial, Radiofísica y Medioambiental			Vera
+5F	ETS Ingeniería Industrial 			Vera
+5F	Servicio de Promoción y Normalización Lingüística			Vera
+5B	Cafetería Pizzeria			Vera
+5B	Farmacia Politecnico			Vera
+5B	Óptica Politécnica			Vera
+5C	Dpto. de Ingeniería de Sistemas y Automática			Vera
+5C	Centro de Medio Ambiente Industrial			Vera
+5C	FLUING  - IMM			Vera
+5C	Instituto Tecnológico del Agua			Vera
+5D	Laboratorio de Acústica Industrial			Vera
+5G				Vera
+5I	Dpto. de Ingeniería Quimica y Nuclear			Vera
+5I	Laboratorio de Radiactividad Ambiental			Vera
+5I	Servicio de Radiaciones			Vera
+5K	Dpto. de Ingeniería Química y Nuclear			Vera
+5K	Instituto Universitario de Seguridad Industrial, Radiofísica y Medioambiental			Vera
+5L				Vera
+5M	Dpto. de Química			Vera
+5M	Instituto Interuniversitario de Investigación de Reconocimiento Molecular y Desarrollo Tecnológico			Vera
+5M	UMI UPV-CIPF en Mecanismos de enfermedades y nanomedicina			Vera
+5M	Unidad Mixta en Nanomedicina y Sensores entre la Fundación Hospital La Fe y el Instituo de Reconocimiento			Vera
+5N	ETS de Ingeniería Industrial			Vera
+5O	Seguridad			Vera
+5O	Servicio de Mantenimiento			Vera
+5P	Invernaderos			Vera
+5Q				Vera
+5R	Servicio de Deportes			Vera
+5E	Dpto. de Ingeniería Eléctrica			Vera
+5E	Dpto. de Ingeniería Mecánica y de Materiales			Vera
+5E	Centro de Investigación en Ingeniería Mecánica			Vera
+5E	Instituto de Tecnología de Materiales			Vera
+5E	Laboratorio de Metrología Dimensional			Vera
+5S	Autoescuela Jordá			Vera
+5S	Bazar de deportes			Vera
+5S	Tienda de electrónica e informática			Vera
+4A	Dpto . De Ingeniería e Infraestructura de los Transportes			Vera
+4A	Instituto del Transporte y Territorio			Vera
+4E	Dpto. de Ingeniería Hidráulica y Medio Ambiente			Vera
+4H	ETSI de Caminos, Canales y Puertos.			Vera
+4H	Área de Sistemas de la Informacioón y las Comunicaciones			Vera
+4M	Banco Santander			Vera
+4M	Librería Inter Técnica , S.L.			Vera
+4L	Área de Sistemas de la Informacioón y las Comunicaciones			Vera
+4L	Servicio de Biblioteca y Documentación Científica.			Vera
+4I	Dpto. de Ingeniería del Terreno			Vera
+4N	Instituto Universitario de Ciencia y Tecnología del Hormigón			Vera
+4P	ETS de Ingeniería de Telecomunicación			Vera
+4P	Dpto. de Comunicaciones			Vera
+4P	Dpto. de Lingüística Aplicada			Vera
+4P	Área de Centro de Lenguas			Vera
+4Q	ETSI de Caminos, Canales y Puertos.			Vera
+4F				Vera
+4K	Casa del Alumno			Vera
+4K	Delegación de Alumnos			Vera
+4K	Delegación IAESTE Valencia			Vera
+4J	Laboratorio de Puertos y Costas			Vera
+4G	ETSI de Caminos, Canales y Puertos.			Vera
+4G	Dpto. de Ingeniería de la Construcción y de Proyectos de Ingeniería Civil			Vera
+4D	ETS de Telecomunicación			Vera
+4D	UA del grupo de Investigación Sistemas y aplicaciones de tiempo real distribuido de la UPV al Inst			Vera
+6F	Piscina cubierta			Vera
+6F	Pista de Tenis			Vera
+6E	Centro de Salud Juana Portaceli			Vera
+6E	Servicio Integrado de Prevención de Salud Labor			Vera
+6E	Clínica dental UPV			Vera
+6E	UPV/FISIO			Vera
+6E	Sección Sindical de Comisiones Obreras de la UPV (CCOO)			Vera
+6E	Sindicato de Trabajadores de la Enseñanza del País Valenciano			Vera
+6A	Servicio de Deportes			Vera
+6A	Pabellón polideportivo			Vera
+6B				Vera
+6C	Instituto Universitario Mixto de Tecnología Química			Vera
+6C	Instituto de Tecnología Eléctrica			Vera
+6D	Dpto. de Máquinas y Motores Térmicos			
+6D	Instituto Universitario CMT - Motores Térmicos			
+6D	Centro de Tecnologías Físicas: Acústica, Materiales y Astrofísica			
+6D	Centro Tecnológivo de Ondas Unidas Asociada CSIC-UPC			
+6D	Instituto de Infraestrucutura del Transporte y del Material Móvil			
+6D	GEM Biosoft, S.L.			
+6D	Principiatech Valencia			
+6G	Vicerrectorado de Empleo y Emprendimiento			
+6G	Área de Acción Internacional			
+6G	Área de Centro de Formación Permanente			
+6G	Área de Comunicación			
+6G	Área de Instituto de Ciencias de la Educación			
+6G	Área de Programas de Investigación e Innovación			
+6G	Centro de Cooperación al Desarrollo			
+6G	Oficina de Acción Internacional			
+6G	Programa de Cátedras de Empresa			
+6G	Servicio de Gestión de la I+D+i			
+6G	Servicio Integrado de Empleo			
+6G	Unidad de Medio Ambiente			
+6G	Edificio Nexus (6G). Salón de actos			
+6G	Edificio Nexus (6G). Conserjería			
+7H	Granjas			
+7A	Dpto. de Estadística e Investigación Operativa Aplicadas y Calidad			
+7A	Dpto. de Matemática Aplicada			
+7A	Área de Sistemas de la Informacioón y las Comunicaciones			
+7A	Universidad Sénior			
+7B	Escuela Técnica Superior de Ingeniería del Diseño			
+7B	Museo del Juquete			
+7D	Dpto. De Organización de Empresas			
+7E				
+7F	Dpto. de Ingeniería Electrónica			
+7F	Radio Club			
+7G	Dpto. de Ciencia Animal			
+7G	Instituto Universitario de Ciencia y Tecnología Animal			
+7G	UA del Inst. Ciencia y Tec. Animal UPV			
+7I	ETSI Geodésica, Cartográfica y Topográfica 			
+7I	Dpto. de Ingeniería Cartográfica Geodesia y Fotogrametría			
+7I	Servicio de Calibración Industrial			
+7J	Facultad de Administración y Dirección de Empresas			
+7J	Dpto. de Economía y Ciencias Sociales			
+7J	Centro de Investigación de Ingeniería Económica			
+7J	Centro de Investigación en Gestión de Empresas			
+7L	Laboratorio Pedro Duque			
