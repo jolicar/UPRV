@@ -31,16 +31,121 @@
   </div>
 </nav>
 
-<div id ="content" class="container-fluid">
-	<div class="row">
-		<div class="col-lg-12">
-			<div class="tab-content">
-				{% include 'startForm.html' %}
-				{% include 'autoForm.html' %}
-			</div>
-		</div>
+<form id="startForm" >
+
+	<label>EMPRESA</label> <input type="text" id="empresa" placeholder="Nombre">
+
+	<p>
+
+	<label>VEHÍCULO</label> <input type="text" id="vehiculo" placeholder="Matrícula">
+
+	<p>
+
+	<label>EDIFICIO</label>
+
+	<select id="edificio">
+		<option value="00"></option>
+		<option value="1B">1B</option>
+		<option value="1C">1C</option>
+		<option value="1E">1E</option>
+		<option value="1F">1F</option>
+		<option value="1G">1G</option>
+		<option value="1H">1H</option>
+		<option value="2A">2A</option>
+		<option value="2B">2B</option>
+		<option value="2C">2C</option>
+		<option value="2D">2D</option>
+		<option value="2E">2E</option>
+		<option value="2F">2F</option>
+		<option value="7I">7I - ETSI GEODÉSICA</option>
+	</select>
+
+	<p>
+
+	<div class="btn-group" role="group">
+		<button onclick="entrada()">Entrada</button>
+		<button onclick="salida()">Salida</button>
 	</div>
-</div>
+
+	<p>
+
+	<p>
+
+	<label>VISITAS</label> 
+
+	<select name="visitas" id="visitas">
+		<option value="00"></option>
+	</select>
+</form>
+<form id="autoForm">
+
+	<label>EMPRESA</label> <input type="text" id="autoCompany" placeholder="Empresa">
+
+	<p>
+
+	<label>NOMBRE</label> <input type="text" id="autoName" placeholder="Nombre">
+
+	<p>
+	
+	<label>APELLIDOS</label> <input type="text" id="autoSubname" placeholder="Apellidos">
+
+	<p>	
+
+	<label>DNI</label> <input type="text" id="autoDni" placeholder="DNI">
+
+	<p>	
+
+	<label>CAMPUS</label> <input type="text" id="campus" placeholder="Campus">
+
+	<p>
+
+	<label>EDIFICIO</label>
+
+	<select id="edificio">
+		<option value="00"></option>
+		<option value="1B">1B</option>
+		<option value="1C">1C</option>
+		<option value="1E">1E</option>
+		<option value="1F">1F</option>
+		<option value="1G">1G</option>
+		<option value="1H">1H</option>
+		<option value="2A">2A</option>
+		<option value="2B">2B</option>
+		<option value="2C">2C</option>
+		<option value="2D">2D</option>
+		<option value="2E">2E</option>
+		<option value="2F">2F</option>
+		<option value="7I">7I - ETSI GEODÉSICA</option>
+	</select>
+
+	<p>
+	
+	<label>FECHAS</label> <input type="text" id="Dates" placeholder="Fechas autorizadas">
+
+	<p>
+
+	<label>FECHA ENTRADA</label> <input type="date" id="inDate" placeholder="Fecha de entrada">
+
+	<p>
+	
+	<label>FECHA SALIDA</label> <input type="date" id="outDate" placeholder="Fecha de salida">
+
+	<p>
+	
+	<label>HORA ENTRADA</label> <input type="time" id="inTime" placeholder="Hora de entrada">
+
+	<p>
+	
+	<label>HORA SALIDA</label> <input type="time" id="outTime" placeholder="Hora de salida">
+
+	<p>
+	
+	<div class="btn-group" role="group">
+		<button onclick="crear()">Crear</button>
+		<button onclick="salida()">Salir</button>
+	</div>
+
+</form>
 
 </body>
 </html>

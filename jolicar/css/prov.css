@@ -7,9 +7,61 @@ label {
 
 button {
 	width: 120px;
+	background-color: #4CAF50;
+	border: none;
+	border-radius:10px;
+	color: white;
+	padding: 10px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-weight:bold;
 }
 
 #visitas {
 	width:300px;
 }
 
+form{
+	width:400px;
+	padding:16px;
+	border-radius:10px;
+	margin:left;
+	background-color:#ccc;
+}
+
+form label{
+	width:140px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="date"]{
+	width:145px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="time"]{
+	width:75px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
