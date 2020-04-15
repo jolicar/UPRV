@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>UPRV</title>
+	
+	<meta charset="UTF-8">
+	
+	<script type="text/javascript" src="js/uprv.js"> </script>
+	
+	<link rel="stylesheet" type="text/css" href="css/uprv.css"/>
+
+</head>
+
+<body onload="inicio()">
+
+<label>CAMPUS</label>
+
+<select id="campus" onchange="actualizaCampus()">
+  <option value="urn:ngsi-ld:uprv:Campus:00"></option>
+</select>
+
+<p>
+
+<hr align="left" width="420px">
+
+<p>
+<label>EMPRESA</label>
+
+<select id="empresa" onchange="actualizaEmpresa()">
+  <option value="urn:ngsi-ld:uprv:Empresa:Z00000000"></option>
+</select>
+
+<p>
+
+<label>DNI</label>
+
+<select id="personal" onchange="actualizaDNI()">
+  <option value="urn:ngsi-ld:uprv:Personal:Z00000000"></option>
+</select>
+
+<p>
+
+<div id="dniBox">
+</div>
+
+<p>
+
+<label>VEHÍCULO</label> <input type="text" id="vehiculo" placeholder="Matrícula" value="">
+
+<p>
+
+<label>EDIFICIO</label>
+
+<select id="edificio">
+  <option value="urn:ngsi-ld:uprv:Edificio:00"></option>
+</select>
+
+<p>
+
+<hr align="left" width="420px">
+
+<p>
+
+<label> </label> 
+<button onclick="entrada()">Entrada</button>
+<button onclick="salida()">Salida</button>
+
+<p>
+
+<p>
+
+<label>VISITAS</label> 
+
+<select onchange="actualizaVisitas()" "name="visitas" id="visitas">
+  <option value="urn:ngsi-ld:uprv:Visita:0000-0000"></option>
+ </select>
+</body>
+
+</html>

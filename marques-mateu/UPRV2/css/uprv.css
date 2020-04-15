@@ -1,0 +1,37 @@
+
+body {
+	color: black;
+	font: 14pt Helvetica, Arial, sans-serif;
+}
+
+label {
+	width: 120px;
+	display: inline-block;
+}
+
+button {
+	width: 120px;
+}
+
+hr {
+  border: 2px solid silver;
+  border-radius: 2px;
+}
+
+#vehiculo {
+	width:284px;
+}
+
+select {
+	width:300px;
+}
+
+#dniBox {
+	background: silver;
+	width: 420px;
+	height: 150px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	word-break: break-all;
+}
