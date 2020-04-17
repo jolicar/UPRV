@@ -248,7 +248,7 @@ async function desplegableEdificioCampus() {
 		
 		var xhr = new XMLHttpRequest();
 
-		xhr.open("GET", url+end+"?orderBy=name&type=Edificio&q=refCampus=="+c, true);
+		xhr.open("GET", url+end+"?limit=1000&orderBy=name&type=Edificio&q=refCampus=="+c, true);
 		xhr.send();
 
 		xhr.onreadystatechange = function() {
