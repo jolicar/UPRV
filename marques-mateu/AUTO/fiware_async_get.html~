@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>FIWARE ASYNC GET/POST</title>
+	
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+<p>
+
+<script language="javascript" type="text/javascript">
+
+	var url = 'https://upvusig.car.upv.es/fiware';
+
+
+	function getFiware1(url) {
+		
+		var xhr = new XMLHttpRequest();
+
+		
+		xhr.open('GET', url, true);
+		xhr.send();
+
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				var json = JSON.parse(xhr.responseText); 
+				console.log("getFiware1(): " + json.length + " " + xhr.responseText);
+				return(json);
+			}
+		};
+	}
+
+
+	function getF1() {
+		console.log("\ngetF1()");
+		
+		var offset = 0;
+		
+		q = url + "/v2/entities?type=Dummy&limit=1&offset=" + offset;
+		
+		console.log("pre");
+		
+		var dummy = getFiware1(q);
+		console.log(dummy);
+
+		console.log("post");
+
+	}
+	
+
+	async function getFiware2(url) {
+	
+		let promise = new Promise(function(resolve, reject) { 
+	
+			var xhr = new XMLHttpRequest();
+
+			xhr.open('GET', url, true);
+			xhr.send();
+
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4 && xhr.status == 200) {
+					var json = JSON.parse(xhr.responseText);
+					console.log("getFiware2(): " + json.length + " " + xhr.responseText);
+					resolve(json);
+				}
+			};	
+		});
+		
+		let txtData = await promise;
+
+		return(txtData);
+	}
+
+
+	async function getF2() {
+		console.log("\ngetF2()");
+		
+		var offset = 0;
+		
+		q = url + "/v2/entities?type=Dummy&limit=1&offset=" + offset;
+		
+		console.log("pre");
+		
+		var dummy = await getFiware2(q);
+		console.log(dummy.length + ": " + JSON.stringify(dummy));
+
+		console.log("post");
+
+	}
+
+
+	async function getFiware3(url) {
+	
+		let promise = new Promise(function(resolve, reject) { 
+	
+			var xhr = new XMLHttpRequest();
+
+			xhr.open('GET', url, true);
+			xhr.send();
+
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4 && xhr.status == 200) {
+					var json = JSON.parse(xhr.responseText);
+					console.log("getFiware2(): " + json.length + " " + xhr.responseText);
+					resolve(json);
+				}
+			};	
+		});
+		
+		let txtData = await promise;
+
+		return(txtData);
+	}
+
+
+	async function getF3() {
+		console.log("\ngetF3()");
+		
+		var offset = 0;
+		
+		console.log("while");
+		
+		var d = [];
+		while (true) {
+			console.log("Offset: " + offset);
+
+			q = url + "/v2/entities?type=Dummy&limit=1&offset=" + offset;
+
+			console.log("pre");
+		
+			var dummy = await getFiware3(q);
+			console.log(dummy.length + ": " + JSON.stringify(dummy));
+
+			console.log("post");
+			
+			if (dummy.length === 0) {
+				break;
+			}
+			
+			// Hacer algo con los datos...
+			d = d.concat(dummy);
+			
+			offset++;
+			
+			if (offset >= 10) {
+				break;
+			}
+		}
+		
+		console.log("while");
+		
+		console.log(JSON.stringify(d, null, 4));
+
+	}
+
+</script>
+
+
+<button onclick="getF1()">Get</button>
+<button onclick="getF2()">Get + async/await</button>
+<button onclick="getF3()">Get + async/await + while</button>
+
+
+</body>
+
+</html>

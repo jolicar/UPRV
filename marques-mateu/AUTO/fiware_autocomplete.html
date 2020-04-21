@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>FIWARE AUTOCOMPLETE</title>
+	
+	<meta charset="UTF-8">
+
+</head>
+
+<body onload="inicio()">
+
+<p>
+
+<script language="javascript" type="text/javascript">
+
+
+	var url = 'https://upvusig.car.upv.es/fiware';
+	var end = "/v2/entities";
+
+
+	async function inicio() {
+		document.getElementById("empresa").value = "";
+		
+		autocompleta();
+		
+	}
+
+
+	
+	async function autocompleta() {
+	
+		let promise = new Promise(function(resolve, reject) { 
+	
+			var xhr = new XMLHttpRequest();
+			
+			xhr.responseType = "json";
+
+			xhr.open("GET", url+end+"?limit=1000&orderBy=rs&type=Empresa", true);
+			xhr.send();
+			
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4 && xhr.status == 200) {
+
+					var empresa = xhr.response;
+					
+					// Rellenamos las posibles opciones de la lista desplegable...
+					
+					var ops = "";
+					for (var i=0; i<empresa.length; i++) {
+						//console.log(empresa[i].rs.value);
+						//ops += "\<option value=\"" + empresa[i].name.value + " - " + decodeURIComponent(empresa[i].rs.value) + "\" /\>";
+						ops += "\<option value=\"" + decodeURIComponent(empresa[i].rs.value) + "\" /\>";
+					}
+
+					document.getElementById("listaEmpresa").innerHTML = ops;
+					
+					resolve();
+
+				}
+			}
+		});
+		
+		await promise;
+
+		return;
+	}
+
+
+	async function procesamiento() {
+	
+		// Aquí iría todo tu procesamiento: POST, limpiar formulario, ...
+		
+		
+		// Para recuperar todos los datos de esa empresa haces una historia (5 pasos))...
+		
+		// 1. Obtienes el valor seleccionado en la lista  
+		
+		var empresaSeleccionada = document.getElementById("empresa").value.trim();
+		
+		console.log(empresaSeleccionada);
+		
+		if (empresaSeleccionada === "") {
+			return;
+		}
+		
+		// 2. Obtienes todas las empresas (otra vez)...
+		
+		let promise = new Promise(function(resolve, reject) { 
+	
+			var xhr = new XMLHttpRequest();
+			
+			xhr.responseType = "json";
+
+			xhr.open("GET", url+end+"?limit=1000&orderBy=rs&type=Empresa", true);
+			xhr.send();
+			
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4 && xhr.status == 200) {
+
+					resolve(xhr.response);
+
+				}
+			}
+		});
+		
+		let empresa = await promise;
+		
+		//console.log(JSON.stringify(empresa));
+		
+		// 3. Buscas la empresa seleccionada en la lista de empresas...
+		
+		empresaJSON = null;
+		for (var i=0; i<empresa.length; i++) {
+			//console.log(empresaSeleccionada + "  " + decodeURIComponent(empresa[i].rs.value));
+			
+			if (empresaSeleccionada === decodeURIComponent(empresa[i].rs.value)) {
+				empresaJSON = empresa[i];
+				break;
+			}
+		}
+		
+		// 4. Envías la información a Fiware...
+		
+		if (empresaJSON === null) {
+
+			// Si la empresa NO existe, la das de alta junto con el personal, horario, etc. que habrá
+			// en alguna parte del formulario...
+		
+			altaEmpresa();
+			altaPersonal();
+		
+		} else {
+		
+			// Si la empresa existe, no la das de alta. Darás de alta al personal, horario, etc. que habrá
+			// en alguna parte del formulario...
+		
+			altaPersonal();
+		}
+
+
+		// 5. Al final se limpia tu formulario...
+		document.getElementById("empresa").value = "";
+		// Limpiar otras casillas de l formulario...
+		
+	}
+
+
+	async function altaEmpresa() {
+	
+		var empresaSeleccionada = document.getElementById("empresa").value.trim();
+		
+		// Obtener otros datos de la empresa (formulario): NIF y campus...
+	
+		console.log("altaEmpresa(): POST con los datos de la empresa "+empresaSeleccionada.toUpperCase());
+		
+		// Aquí una promesa: async, Promise, await...
+		
+	}
+
+
+	async function altaPersonal() {
+	
+		// Obtener datos del trabajador (formulario): DNI, apellidos, nombre, empresa, campus, ...
+		//
+		// Aquí puedes ver la estructura de la clase Personal:
+		//
+		//     https://upvusig.car.upv.es/fiware/v2/entities?type=Personal
+
+		console.log("altaPersonal(): POST con los datos del trabajador (entidad tipo Personal)");
+
+		// Aquí una promesa: async, Promise, await...
+
+		
+		// Obtener datos del acceso del trabajador (formulario): DNI, día inicio, dia fin, horario, edificios, ...
+		//
+		// Aquí puedes ver la estructura de la clase Acceso:
+		//
+		//     https://upvusig.car.upv.es/fiware/v2/entities?type=Acceso
+		
+		console.log("altaPersonal(): POST con el horario del trabajador (entidad tipo Acceso)");	
+
+		// Aquí una promesa: async, Promise, await...
+
+	}
+	
+</script>
+
+<input size="40" list="listaEmpresa" placeholder="Empresa" type="text" id="empresa">
+
+<datalist id="listaEmpresa">
+</datalist>
+
+<button onclick="procesamiento()">Aceptar</button>
+
+</body>
+
+</html>
