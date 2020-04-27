@@ -7,12 +7,12 @@ var marker = null;
 var locText = document.getElementById("locText");
 
 var markerOptions = {
-	radius: 15,
+	radius: 4,
 	color: "black",
 	fillColor: '#fff',
 	fillOpacity: 0.8
 };
-var dataJSON
+var dataJSON;
 var pointLtd = null; // Latitud del punto de ubicación
 var pointLng = null; // Longitud del punto de ubicación
 var myArraymin = [];
@@ -23,19 +23,28 @@ var options = {
 };
 
 // MAPA
-function onDeviceReady() {
+
+async function onDeviceReady() {
+	
+	let promise = new Promise(function(resolve, reject) { 
 		
 	map.setView([39.481000,  -0.341000], 16);
 		var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: "&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors"
 	}).addTo(map);
 
+<<<<<<< HEAD:almemar/js/mapaupv.js
     var xhr = new XMLHttpRequest() //objeto petición;
 	var t = xhr.open("GET", url+end+"?limit=1000&type=Visita",true);
+=======
+    var xhr = new XMLHttpRequest()
+	xhr.open("GET", url+end+"?limit=1000&type=Edificio", true);
+>>>>>>> c9348f579c416fc02db5e7fad924fec1b59aaade:Posada_Heidy/MAPAUPV/js/mapaupv.js
 	xhr.send();
 	
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState ==4 && xhr.status==200){
+<<<<<<< HEAD:almemar/js/mapaupv.js
 			var jsonData = JSON.parse(xhr.responseText); //to text
 			for (var i=0; i<jsonData.length; i++){
 				var edificio = jsonData[i].refEdificio.value
@@ -44,6 +53,44 @@ function onDeviceReady() {
 				//se interrumpe el bucle...(necesairio un if... ¿Donde abordarlos?)
 			}
 			
+=======
+			var jsonData = xhr.responseText;
+			dataJSON = JSON.parse(jsonData);
+			for (var i=0; i<dataJSON.length; i++) {
+				//console.log(dataJSON[i].location.value.coordinates);
+				var latpto = dataJSON[i].location.value.coordinates[1]
+				var lonpto = dataJSON[i].location.value.coordinates[0]
+				
+				var markID = L.circle([latpto, lonpto], markerOptions)
+				markID.addTo(map);
+			resolve(dataJSON);
+			}
+		} else {
+					// Normalmente error porque el servidor no existe o no se encuentra...
+			resolve([]);
+			}
+		}
+	});
+};
+	
+	/*for (var i=0; i<pos.length; i++) 
+
+			/*
+			n = dataJSON.pos.;
+			console.log(n);
+			
+			for (var i=0; i<n; i++){
+				var latpto = dataJSON.features[i].geometry.coordinates[1]
+				var lonpto = dataJSON.features[i].geometry.coordinates[0]
+				var precio = dataJSON.features[i].properties.Precio
+				
+				var markID = L.circle([latpto, lonpto], markerOptions)
+				markID.addTo(map);
+				markID.bindPopup('<p>Price: '+ precio +'</p>').openPopup();
+			}
+			
+					
+>>>>>>> c9348f579c416fc02db5e7fad924fec1b59aaade:Posada_Heidy/MAPAUPV/js/mapaupv.js
 		}
 	};
 	console.log(entrada);
@@ -68,11 +115,11 @@ function onDeviceReady() {
 
 	L.control.layers(baseLayers, overlayMaps, {position: 'bottomright'}).addTo(map);
 }
-
+*/
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
-  //document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
