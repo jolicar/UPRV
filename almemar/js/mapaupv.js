@@ -31,28 +31,23 @@ function onDeviceReady() {
 	}).addTo(map);
 
     var xhr = new XMLHttpRequest() //objeto petición;
-	xhr.open("GET", url+end+"?idPattern=uprv&type=Campus&orderBy=id", true);
+	var t = xhr.open("GET", url+end+"?limit=1000&type=Visita",true);
 	xhr.send();
 	
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState ==4 && xhr.status==200){
-			var jsonData = JSON.parse(xhr.responseText);
-			console.log(jsonData);
-			
-			/*
-			for (var i=0; i<n; i++){
-				var latpto = dataJSON.features[i].geometry.coordinates[1]
-				var lonpto = dataJSON.features[i].geometry.coordinates[0]
-				var precio = dataJSON.features[i].properties.Precio
-				
-				var markID = L.circle([latpto, lonpto], markerOptions)
-				markID.addTo(map);
-				markID.bindPopup('<p>Price: '+ precio +'</p>').openPopup();
+			var jsonData = JSON.parse(xhr.responseText); //to text
+			for (var i=0; i<jsonData.length; i++){
+				var edificio = jsonData[i].refEdificio.value
+				var entrada = jsonData[i].entrada.value
+				var exit = jsonData[i].salida.value
+				//se interrumpe el bucle...(necesairio un if... ¿Donde abordarlos?)
 			}
-			*/	
-					
+			
 		}
 	};
+	console.log(entrada);
+	
 	
 	// LAYERS
 
@@ -87,6 +82,73 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 } 
 
+async function coordenadas() {
+	
+	let promise = new Promise(function(resolve, reject) { 
 
+		// Recuperación de la entidad de tipo "Posicion"...
+		var xhr = new XMLHttpRequest(); 
+		var pueba = xhr.open("GET", url+end+"?limit=1000&type=Posicion&q=estado==uso", true);
+	
+		xhr.send();
+		
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4) {  
+				if (xhr.status == 200) {
+					// Petición correcta...	
+					var p = JSON.parse(xhr.responseText);
+					//console.log(p);
+					resolve(p);
+				} else {
+					// Normalmente error porque el servidor no existe o no se encuentra...
+					resolve([]);
+				}
+			}
+		}; 	
+	});
+}
 
+async function realTime() {
+	
+	
+	
+	
+}
 
+async function numVisitas() {
+
+	// Calcular el número de entidades de tipo "Visita" realizadas en el año en curso...
+	
+	let promise = new Promise(function(resolve, reject) { 
+		
+		// Año actual...
+		var a = new Date().getFullYear();
+	
+		var xhr = new XMLHttpRequest();
+
+		var t = xhr.open('GET', url+end+"?limit=1000&type=Visita", true);
+		xhr.send();
+
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				var json = JSON.parse(xhr.responseText);
+				console.log("visitaActual(): " + json.length + " " + xhr.responseText);
+				
+				var n = 0;
+				
+				for (var e=0; e<json.length; e++) {
+					var b = json[e].name.value.split("-")[0];
+										
+					if (a == b) {
+						n++;
+					}
+				}
+				
+				resolve(n);
+			}
+		};
+		
+	});	
+
+		
+}
