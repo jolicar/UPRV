@@ -22,9 +22,9 @@ var end = '/v2/entities';
 async function inicio() {
 
 	console.log();
-	console.log("inicio()");
+	console.log("inicioV()");
 	
-	// Comprobación de entidad "urn:ngsi-ld:uprv:Va"... La variable va es una variable centinela, da la ultima visita. Sirve para saber la ultima, pedirle info y a partir de esta segur con nuevas va.
+	// Comprobación de entidad "urn:ngsi-ld:uprv:Va"...
 	console.log("Entidad \"urn:ngsi-ld:uprv:Va\"");
 	let va = await visitaActual();
 	
@@ -198,12 +198,12 @@ async function desplegableCampus() {
 					//console.log(ent[e].name.value);
 					//console.log(ent[e].id);
 				
-					var c = document.createElement("option");// creas una opcion o linea en html
+					var c = document.createElement("option");
 				
 					c.appendChild(document.createTextNode(ent[e].name.value));
 					c.value = ent[e].id;
 					camp.appendChild(c);
-					//camp.value = ent[e].id;	
+					camp.value = ent[e].id;	
 				}
 				
 				resolve();
@@ -248,7 +248,7 @@ async function desplegableEdificioCampus() {
 		
 		var xhr = new XMLHttpRequest();
 
-		xhr.open("GET", url+end+"?limit=1000&orderBy=name&type=Edificio&q=refCampus=="+c, true);
+		xhr.open("GET", url+end+"?orderBy=name&type=Edificio&q=refCampus=="+c, true);
 		xhr.send();
 
 		xhr.onreadystatechange = function() {

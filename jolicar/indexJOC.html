@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>PROV</title>
+	<title>UPRV</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -9,7 +9,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	
-	<script type="text/javascript" src="js/provJOC.js"> </script>
+	
+	<script type="text/javascript" src="js/uprv.js"> </script>
+	<!--<script type="text/javascript" src="js/uprvV.js"> </script>-->
+	<script type="text/javascript" src="js/uprvA.js"> </script>
 	
 	<link rel="stylesheet" type="text/css" href="css/prov.css"/>
 
@@ -25,8 +28,7 @@
   <!-- Links -->
 	<div class="btn-group">
 		<button type="button" class="btn btn-primary" id="buttonStart" >Inicio</button>
-		<button type="button" class="btn btn-success" id="buttonMap1" >Mapa Edificios</button>
-		<button type="button" class="btn btn-success" id="buttonMap2" >Mapa Tiempo Real</button>
+		<button type="button" class="btn btn-success" id="buttonMap" >Mapa</button>
 		<button type="button" class="btn btn-info" id="buttonFind" >Buscar</button>
 		<button type="button" class="btn btn-warning" id="buttonAuto" >Autorizar</button>
 
@@ -35,33 +37,53 @@
 
 <form id="startForm" >
 
-	<label>EMPRESA</label> <input type="text" id="empresa" placeholder="Nombre">
+	<label>CAMPUS</label>
+	
+	<select id="campus" onchange="actualizaCampus()">
+		<option value="urn:ngsi-ld:uprv:Campus:00"></option>
+	</select>
+
+	<p>
+	
+	<hr align="left" width="375px">
+	
+	<p>
+
+	<label>EMPRESA</label>
+
+	<select id="empresa" onchange="actualizaEmpresa()">
+		<option value="urn:ngsi-ld:uprv:Empresa:Z00000000"></option>
+	</select>
 
 	<p>
 
-	<label>VEHÍCULO</label> <input type="text" id="vehiculo" placeholder="Matrícula">
+	<label>PERSONAL</label>
+
+	<select id="personal" onchange="actualizaDNI()">
+		<option value="urn:ngsi-ld:uprv:Personal:Z00000000"></option>
+	</select>
+
+	<p>
+
+	<div id="dniBox">
+	</div>
+
+	<p>
+
+	<label>VEHÍCULO</label> <input type="text" id="vehiculo" placeholder="Matrícula" value="">
 
 	<p>
 
 	<label>EDIFICIO</label>
 
 	<select id="edificio">
-		<option value="00"></option>
-		<option value="1B">1B</option>
-		<option value="1C">1C</option>
-		<option value="1E">1E</option>
-		<option value="1F">1F</option>
-		<option value="1G">1G</option>
-		<option value="1H">1H</option>
-		<option value="2A">2A</option>
-		<option value="2B">2B</option>
-		<option value="2C">2C</option>
-		<option value="2D">2D</option>
-		<option value="2E">2E</option>
-		<option value="2F">2F</option>
-		<option value="7I">7I - ETSI GEODÉSICA</option>
+		<option value="urn:ngsi-ld:uprv:Edificio:00"></option>
 	</select>
+	
+	<p>
 
+	<hr align="left" width="375px">
+	
 	<p>
 
 	<div class="btn-group" role="group">
@@ -75,13 +97,37 @@
 
 	<label>VISITAS</label> 
 
-	<select name="visitas" id="visitas">
-		<option value="00"></option>
+	<select onchange="actualizaVisitas()" "name="visitas" id="visitas">
+		<option value="urn:ngsi-ld:uprv:Visita:0000-0000"></option>
 	</select>
+
 </form>
 <form id="autoForm">
 
-	<label>EMPRESA</label> <input type="text" id="autoCompany" placeholder="Empresa">
+	<label>CAMPUS</label>
+	
+	<select id="autoCampus" onchange="actualizaCampus()">
+		<option value="urn:ngsi-ld:uprv:Campus:00"></option>
+	</select>
+
+	<p>
+
+	<label>EDIFICIO</label>
+
+	<select id="autoEdificio">
+		<option value="urn:ngsi-ld:uprv:Edificio:00"></option>
+	</select>
+
+	<p>
+	
+	<label>EMPRESA</label> <input type="text" id="autoEmpresa" placeholder="Empresa" list="listaEmpresa">
+	
+	<datalist id="listaEmpresa">
+	</datalist>
+
+	<p>
+	
+	<label>CIF</label> <input type="text" id="autoCif" placeholder="CIF" onclick="autocompletaCif()">
 
 	<p>
 
@@ -97,54 +143,25 @@
 
 	<p>	
 
-	<label>CAMPUS</label> <input type="text" id="campus" placeholder="Campus">
-
-	<p>
-
-	<label>EDIFICIO</label>
-
-	<select id="edificio">
-		<option value="00"></option>
-		<option value="1B">1B</option>
-		<option value="1C">1C</option>
-		<option value="1E">1E</option>
-		<option value="1F">1F</option>
-		<option value="1G">1G</option>
-		<option value="1H">1H</option>
-		<option value="2A">2A</option>
-		<option value="2B">2B</option>
-		<option value="2C">2C</option>
-		<option value="2D">2D</option>
-		<option value="2E">2E</option>
-		<option value="2F">2F</option>
-		<option value="7I">7I - ETSI GEODÉSICA</option>
-	</select>
+	<label>FECHA INICIO</label> <input type="date" id="inDate">
 
 	<p>
 	
-	<label>FECHAS</label> <input type="text" id="Dates" placeholder="Fechas autorizadas">
-
-	<p>
-
-	<label>FECHA ENTRADA</label> <input type="date" id="inDate" placeholder="Fecha de entrada">
+	<label>FECHA FIN</label> <input type="date" id="outDate">
 
 	<p>
 	
-	<label>FECHA SALIDA</label> <input type="date" id="outDate" placeholder="Fecha de salida">
+	<label>HORA ENTRADA</label> <input type="time" id="inTime">
 
 	<p>
 	
-	<label>HORA ENTRADA</label> <input type="time" id="inTime" placeholder="Hora de entrada">
-
-	<p>
-	
-	<label>HORA SALIDA</label> <input type="time" id="outTime" placeholder="Hora de salida">
+	<label>HORA SALIDA</label> <input type="time" id="outTime" >
 
 	<p>
 	
 	<div class="btn-group" role="group">
-		<button onclick="crear()">Crear</button>
-		<button onclick="salida()">Salir</button>
+		<button type="button" class="btn btn-success" id="buttonCrearA" >Crear</button>
+		<button type="button" class="btn btn-danger" id="buttonSalirA" >Salir</button>
 	</div>
 
 </form>
