@@ -33,12 +33,27 @@ async function onDeviceReady() {
 		attribution: "&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors"
 	}).addTo(map);
 
+<<<<<<< HEAD:almemar/js/mapaupv.js
+    var xhr = new XMLHttpRequest() //objeto petición;
+	var t = xhr.open("GET", url+end+"?limit=1000&type=Visita",true);
+=======
     var xhr = new XMLHttpRequest()
 	xhr.open("GET", url+end+"?limit=1000&type=Edificio", true);
+>>>>>>> c9348f579c416fc02db5e7fad924fec1b59aaade:Posada_Heidy/MAPAUPV/js/mapaupv.js
 	xhr.send();
 	
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState ==4 && xhr.status==200){
+<<<<<<< HEAD:almemar/js/mapaupv.js
+			var jsonData = JSON.parse(xhr.responseText); //to text
+			for (var i=0; i<jsonData.length; i++){
+				var edificio = jsonData[i].refEdificio.value
+				var entrada = jsonData[i].entrada.value
+				var exit = jsonData[i].salida.value
+				//se interrumpe el bucle...(necesairio un if... ¿Donde abordarlos?)
+			}
+			
+=======
 			var jsonData = xhr.responseText;
 			dataJSON = JSON.parse(jsonData);
 			for (var i=0; i<dataJSON.length; i++) {
@@ -75,8 +90,11 @@ async function onDeviceReady() {
 			}
 			
 					
+>>>>>>> c9348f579c416fc02db5e7fad924fec1b59aaade:Posada_Heidy/MAPAUPV/js/mapaupv.js
 		}
 	};
+	console.log(entrada);
+	
 	
 	// LAYERS
 
@@ -111,6 +129,73 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 } 
 
+async function coordenadas() {
+	
+	let promise = new Promise(function(resolve, reject) { 
 
+		// Recuperación de la entidad de tipo "Posicion"...
+		var xhr = new XMLHttpRequest(); 
+		var pueba = xhr.open("GET", url+end+"?limit=1000&type=Posicion&q=estado==uso", true);
+	
+		xhr.send();
+		
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4) {  
+				if (xhr.status == 200) {
+					// Petición correcta...	
+					var p = JSON.parse(xhr.responseText);
+					//console.log(p);
+					resolve(p);
+				} else {
+					// Normalmente error porque el servidor no existe o no se encuentra...
+					resolve([]);
+				}
+			}
+		}; 	
+	});
+}
 
+async function realTime() {
+	
+	
+	
+	
+}
 
+async function numVisitas() {
+
+	// Calcular el número de entidades de tipo "Visita" realizadas en el año en curso...
+	
+	let promise = new Promise(function(resolve, reject) { 
+		
+		// Año actual...
+		var a = new Date().getFullYear();
+	
+		var xhr = new XMLHttpRequest();
+
+		var t = xhr.open('GET', url+end+"?limit=1000&type=Visita", true);
+		xhr.send();
+
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				var json = JSON.parse(xhr.responseText);
+				console.log("visitaActual(): " + json.length + " " + xhr.responseText);
+				
+				var n = 0;
+				
+				for (var e=0; e<json.length; e++) {
+					var b = json[e].name.value.split("-")[0];
+										
+					if (a == b) {
+						n++;
+					}
+				}
+				
+				resolve(n);
+			}
+		};
+		
+	});	
+
+		
+}

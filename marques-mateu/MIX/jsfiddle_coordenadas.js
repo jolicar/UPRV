@@ -17,7 +17,7 @@ async function coordenadas() {
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4) {  
 				if (xhr.status == 200) {
-					// Petición correcta...
+					// Petición correcta...	
 					var p = JSON.parse(xhr.responseText);
 					resolve(p);				
 				} else {
@@ -34,6 +34,7 @@ async function coordenadas() {
 	// Iterar sobre todas las posiciones y dibujarlas sobre el mapa...
 	for (var i=0; i<pos.length; i++) {
 		// Aqui debéis poner vuestro código...
+		xhr.open("GET", url+end+"?v2/entities?type=visita&1q=entrada")
 		alert(JSON.stringify(pos[i], null, 4)); 
 	}
 }
